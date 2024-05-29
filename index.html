@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game AI</title>
+    <style>
+        /* body {
+            background-image: url("images/grasss.jpg");
+            background-size: cover;
+        } */
+        #container{
+            display: flex;
+            width: 100%;
+        }
+        #canvas-container {
+            margin-left: 60px;
+            
+        }
+
+        #image-container {
+            margin-left: 60px;
+            position: relative;
+            text-align: center;
+        }
+        
+        #image-container2 {
+            margin-left: 60px;
+            margin-right: 25px;
+            position: relative;
+            text-align: center;
+
+
+        }
+        .menu-background {
+            width: 100%;
+            height: 90vh;
+            margin-top: 20px;
+            border: 4px solid black;
+            border-radius: 15px;
+        }
+
+        .text {
+            position: absolute;
+            top: 20px; 
+            left: 50px;
+            align-items: center;
+            background-color: rgba(255, 230, 0, 0.8);
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        #inmenu-pawn-white {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 465px;
+            left: 120px;
+        }
+
+        #inmenu-pawn-black {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 460px;
+            left: 0px
+        }
+        
+        #white-no {
+            font-size: 50px;
+            color: yellowgreen;
+            position: absolute;
+            top: 460px;
+            left: 200px;
+        }
+
+        #black-no {
+            font-size: 50px;
+            color: yellowgreen;
+            position: absolute;
+            top: 460px;
+            left: 80px
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- <video style="position: absolute; width: 100%; height: 100%; display: flex; z-index: -1;" autoplay loop muted src="grass_animation.mp4"></video> -->
+    <div id="container">
+    <div id="canvas-container">
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <img src="images/pawnwhite.png">
+    
+    </div>
+    <div id="image-container">
+        <img class="menu-background" src="images/darkwood.PNG">
+        <h3 class="text">Current Game Stats</h3>
+        <img src="images/pawnwhite.png" id="inmenu-pawn-white">
+        <img src="images/pawnblack.png" id="inmenu-pawn-black">
+        <h2 id="black-no">x5</h2>
+        <h2 id="white-no">x5</h2>
+
+
+    </div>
+    <div id="image-container2">
+        <img class="menu-background" src="images/darkwood.PNG">
+        <h3 class="text">Overall Scores</h3>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
